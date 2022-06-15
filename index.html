@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>coeurAnime</title>
+</head>
+<body>
+     <div class="fa-stack">
+        <i class="fa-regular fa-heart fa-stack"></i>
+        <i class="fa-solid fa-heart fa-stack fa-inverse"></i>
+    </div>
+    <div class="explications">
+        <p>On choisit les deux inônes font Awesome que l'on va "stacker": <br>
+        -  <i class="fa-regular fa-heart"></i><br>
+        -  <i class="fa-solid fa-heart"></i> 
+        </p>
+        <p>
+            - La couleur de l'icône fonctionne comme un texte, je fais donc un linear gradient sur l'icône
+            puis utilise "background-clip : text" et rends le background transparent comme cela j'obtiens
+            un icône coloré.<br>
+            <i class="fa-solid fa-heart colore"></i>
+        </p>
+        <p>
+            -On positionne les élements en position absolute, on les mets l'un au dessus de l'autre et on met 
+            le coeur coloré avec une div en taille 0 que l'on fait grandir au survol
+        </p>
+
+
+    </div>
+</body>
+
+</html>

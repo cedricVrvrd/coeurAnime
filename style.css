@@ -1,0 +1,45 @@
+.fa-stack {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/*mise en position absolute pour les mettre l'un au dessus de l'autre*/
+.fa-stack .fa-regular {
+  font-size: 50px;
+  position: absolute;
+  /* z-index: 3; */
+}
+
+/*mise en transparence du coeur solid avec une dimension de 0*/
+.fa-stack .fa-solid {
+  width: 0;
+  height: 0;
+  position: absolute;
+  font-size: 50px;
+  color: transparent;
+  /* z-index: 1; */
+}
+
+/*on fait grandir progressivement le coeur solid pour simuler le remplisage, on utilise background clip text 
+pour donner au coeur solid la couleur de l'arriere plan puis transparent pour rendre le background transparent. */
+.fa-stack:hover .fa-solid {
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(45deg, #FF79DA 40%, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition-duration: 1200ms;
+}
+
+
+.colore{
+  background: -webkit-linear-gradient(45deg, #FF79DA 40%, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
