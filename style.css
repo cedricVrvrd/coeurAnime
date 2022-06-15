@@ -29,10 +29,12 @@ pour donner au coeur solid la couleur de l'arriere plan puis transparent pour re
 .fa-stack:hover .fa-solid {
   width: 100%;
   height: 100%;
+  border-radius: 50px;
   background: -webkit-linear-gradient(45deg, #FF79DA 40%, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  animation: gaucheDroite 1s;
   transition-duration: 1200ms;
   transition-timing-function: ease-in-out;
 }
