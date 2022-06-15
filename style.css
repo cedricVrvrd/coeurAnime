@@ -34,6 +34,7 @@ pour donner au coeur solid la couleur de l'arriere plan puis transparent pour re
   -webkit-background-clip: text;
   color: transparent;
   transition-duration: 1200ms;
+  transition-timing-function: ease-in-out;
 }
 
 
